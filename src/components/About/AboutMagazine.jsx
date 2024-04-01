@@ -11,7 +11,7 @@ export default function Magazine() {
     
   const { isVisible } = useScrollVisibility(magazineRef, sliderRef);
   return (
-    <div id="magazine" className={`magazine-container ${isVisible ? "appear": ""}`} ref={magazineRef}>
+    <div id="magazine" className={`magazine-container ${isVisible ? "appear a": ""}`} ref={magazineRef}>
       <h2 ref={sliderRef}>{data.section5.title}</h2>
       <p>
         {data.section5.description}
