@@ -1,4 +1,10 @@
 const Images = {
+  BeachReduced: require("./beach-cleaning.jpg"),
+  GaneshReduced: require("./ganesh.jpg"),
+  NPaperReduced: require("./mewspaper-distri.jpg"),
+  NashaReduced: require("./nasha-mukti.jpg"),
+  HealthReduced: require("./online-health.jpg"),
+  BloodReduced: require("./blood-dono.jpg"),
   PachPran: [
     require("./Panch pran pledge (Education) 02.jpg"),
     require("./Panch pran pledge (Education) 01.jpg"),
@@ -38,7 +44,7 @@ const Images = {
   EnergyCons: [],
   SchoolTeaching: [],
   NukkadSamajik: [],
-  Cancer: [],  
+  Cancer: [],
   Stem: [],
   FreeMedical: [],
   MenstCyc: [],

@@ -2,6 +2,7 @@ import "../styles/Imagegallery/imagegallery.css";
 import ReducedProjects from "../assets/project_gallery_reduced";
 import Projects from "../assets/project_gallery";
 import Image from "../containers/Image";
+import { useEffect } from "react";
 
 const CardList = ({ imageCards }) => {
   return (
@@ -694,6 +695,10 @@ const ImageGallery = () => {
       ReducedImg: ReducedProjects.project_reduced167,
     },
   ];
+
+  useEffect(() => {
+    document.title = "Gallery | TCET NSS UNIT"
+  })
 
   return (
     <div className="image-gallery-container">

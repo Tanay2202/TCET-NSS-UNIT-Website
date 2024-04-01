@@ -2,21 +2,22 @@
     width: 80%;
     margin: auto;
     padding: 2rem 0;
-    transform: translateY(3rem);
+    transform: var(--transform-animation-below);
     opacity: 0;
     transition: 500ms;
 }
 
 .recent-projects-container.appear {
-    transform: translateY(0);
+    transform: var(--transform-no-animation);
+    user-select: none;
     opacity: 1;
 }
 
 .home-projects-header {
     text-align: center;
-    font-family: Roboto-web;
-    font-size: 5rem;
-    font-weight: 900;
+    font-family: var(--title-font-family);
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
     position: relative;
     width: fit-content;
     margin: auto;
@@ -27,7 +28,7 @@
     inset: 0;
     background-color: white;
     border-left: 7px solid black;
-    animation: typewriter 2s ease-in-out forwards;
+    animation: typing-animation-slider 2s ease-in-out forwards;
 }
 
 .prioject-class-container {
@@ -53,7 +54,6 @@
 
 .recent-project-card > img {
     width: 100%;
-    /* max-height: 50%; */
     object-fit: cover;
     background-size: cover;
     object-position: center;
@@ -74,8 +74,8 @@
 }
 
 .recent-project-short-description {
-    font-weight: 400;
-    font-size: 1rem;
+    font-weight: var(--p-font-weight);
+    font-size: var(--p-font-size);
     padding: 0.5rem 1rem 1.5rem 1rem;
 }
 
@@ -90,9 +90,6 @@
     .recent-project-card:nth-child(4), .recent-project-card:nth-child(5){
         width: 48%;
     }
-    .home-projects-header {
-        font-size: 3.5rem;
-    }
     .recent-projects-container {
         width: 90%;
     }
@@ -102,17 +99,11 @@
 }
 
 @media screen and (max-width:768px){
-    .home-projects-header {
-        font-size: 3rem;
-    }
     .recent-project-domain {
         font-size: .8rem;
     }
     .recent-project-title {
         font-size: 1.2rem;
-    }
-    .recent-project-short-description {
-        font-size: .85rem;
     }
 }
 
@@ -146,23 +137,14 @@
     .recent-project-title {
         font-size: 1.6rem;
     }
-    .recent-project-short-description {
-        font-size: 1rem;
-    }
 }
 
 @media screen and (max-width:425px){
-    .home-projects-header {
-        font-size: 2.5rem;
-    }
     .recent-project-domain {
         font-size: .8rem;
     }
     .recent-project-title {
         font-size: 1.3rem;
-    }
-    .recent-project-short-description {
-        font-size: .8rem;
     }
     .prioject-class-container {
         padding: 0;
@@ -179,7 +161,10 @@
 
 
 @media screen and (max-width:320px) {
-    .home-projects-header {
-        font-size: 2.2rem;
+    .recent-project-card {
+        flex-direction: column;
+    }
+    .recent-project-card > img {
+        width: 100%;
     }
 }

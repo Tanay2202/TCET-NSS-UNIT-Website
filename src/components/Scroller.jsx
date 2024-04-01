@@ -21,20 +21,7 @@ const cards = [
     },
     id: 1,
   },
-  {
-    url: `${Images.Satyam}`,
-    quote:
-      "A great person attracts great people and knows how to hold them together",
 
-    details: {
-      name: "Satyam Rudrakanthwar",
-      desi: "Student Leader",
-      linkedin: "",
-      about:
-        "Satyam is a dedicated individual recognized for his inclusive and responsible nature. His remarkable ability to inspire peers has cultivated a robust culture of social responsibility within the team. As a creative wizard, he introduces innovation to his leadership, making a lasting impact beyond the immediate group. His commitment to excellence and creative problem-solving positions him as a valuable asset.",
-    },
-    id: 2,
-  },
   {
     url: `${Images.Ruchika}`,
     quote:
@@ -46,6 +33,20 @@ const cards = [
       linkedin: "",
       about:
         "Ruchika demonstrates empathy, resilience, and approachability and can take everyone around uphill; one who can amplify our effect and create a positive change to contribute to the betterment of our community. She exhibits effective communication with her associates, subordinates and seniors. She has consistently shown an unwavering commitment to fostering positive change, inclusivity, and collaboration. She strives to and has effectively created an environment where every volunteer feels supported and heard.",
+    },
+    id: 2,
+  },
+  {
+    url: `${Images.Satyam}`,
+    quote:
+      "A great person attracts great people and knows how to hold them together",
+
+    details: {
+      name: "Satyam Rudrakanthwar",
+      desi: "Student Leader",
+      linkedin: "",
+      about:
+        "Satyam is a dedicated individual recognized for his inclusive and responsible nature. His remarkable ability to inspire peers has cultivated a robust culture of social responsibility within the team. As a creative wizard, he introduces innovation to his leadership, making a lasting impact beyond the immediate group. His commitment to excellence and creative problem-solving positions him as a valuable asset.",
     },
     id: 3,
   },

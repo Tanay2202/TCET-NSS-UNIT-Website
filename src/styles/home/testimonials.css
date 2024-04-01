@@ -1,14 +1,14 @@
 .testimonial {
     width: 80%;
     margin: auto;
-    padding: 2rem 0;
-    transform: translateY(3rem);
+    padding: 0 0 2rem 0;
+    transform: var(--transform-animation-below);
     opacity: 0;
     transition: 500ms;
 }
 
 .testimonial.appear {
-    transform: translateY(0);
+    transform: var(--transform-no-animation);
     opacity: 1;
 }
 
@@ -21,9 +21,9 @@
 
 .testimonials-header {
     text-align: center;
-    font-family: Roboto-web;
-    font-size: 5rem;
-    font-weight: 900;
+    font-family: var(--title-font-family);
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
     position: relative;
     width: fit-content;
     margin: auto;
@@ -35,7 +35,7 @@
     inset: 0;
     background-color: white;
     border-left: 7px solid black;
-    animation: typewriter 2s ease-in-out forwards;
+    animation: typing-animation-slider 2s ease-in-out forwards;
 }
 
 .testimonial-card {
@@ -78,6 +78,11 @@
     font-weight: 400;
 }
 
+.testimonial-card > p {
+    font-size: var(--p-font-size);
+    font-weight: var(--p-font-weight);
+}
+    
 .active-card {
     transition: 300ms ease-in-out;
     box-shadow: 1px 1px 10px #00000096;
@@ -87,7 +92,6 @@
     opacity: .3;
     transition: 300ms ease-in-out;
     border: 2px solid rgba(0, 9, 12, 0.189);
-    /* box-shadow: 2px 2px 10px #00000021; */
 }
 
 .testimonial-scroller {
@@ -118,19 +122,12 @@
     background-color: rgb(59, 190, 230);
 }
 
-
 @media screen and (max-width:1024px){
-    #testimonials-header {
-        font-size: 3.5rem;
-    }
     .testimonial-card > div > h5 {
         font-size: 1rem;
     }
     .testimonial-card > div > h3 {
         font-size: 1.3rem;
-    }
-    .testimonial-card > p {
-        font-size: .9rem;
     }
     .testimonial-card img {
         height: 7rem;
@@ -157,7 +154,6 @@
         width: 100%;
     }
     .testimonial-card > p {
-        font-size: 1rem;
         text-align: center;
     }
     .sub-active {

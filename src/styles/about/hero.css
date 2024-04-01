@@ -14,10 +14,13 @@
     flex-shrink: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url("../../assets/about/council2024.png");
+    /* background-image: url("../../assets/about/council2024.png"); */
     background-size: cover;
     background-position: bottom;
     position: relative;
+}
+.council:nth-child(1) {
+    background-image: url("../../assets/about/team_2024.jpg");
 }
 
 .council-text {
@@ -38,10 +41,11 @@
 }
 
 .council-text p {
+    font-family: Alex-Brush-web;
     text-align: center;
     color: white;
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1.9rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -55,7 +59,7 @@
         font-size: 3rem;
     }
     .council-text p {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -70,6 +74,40 @@
         font-size: 2rem;
     }
     .council-text p {
+        font-size: 1.2rem;
+        color: #eee;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .council-text > h2{
+        font-size: 1.8rem;
+    }
+    .council-text > p{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 425px) {
+    .counc-carousel, .council {
+        height: 100vh;
+    }
+    .council-text > h2{
+        font-size: 3rem;
+    }
+    .council-text > p{
         font-size: .8rem;
+        margin: auto;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 400px) {
+    .council-text > h2{
+        font-size: 1.8rem;
+    }
+    .council-text > p{
+        font-size: .8rem;
+        margin: auto;
     }
 }

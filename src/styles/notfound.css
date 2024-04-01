@@ -1,0 +1,62 @@
+.not-found-page {
+    padding: 5rem 0;
+    text-align: center;
+    user-select: none;
+}
+
+.not-found-page > h1 {
+    font-size: calc(var(--title-font-size) + 3rem);
+    font-family: var(--title-font-family);
+}
+
+.not-found-page > p {
+    font-size: calc(var(--p-font-size) + 1rem);
+    font-family: var(--title-font-family);
+}
+
+.not-found-page > hr {
+    height: .1rem;
+    width: 60%;
+    margin: 1rem auto;
+    background-color: grey;
+}
+
+.not-found-page > button {
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+    .not-found-page > h1 {
+        font-size: calc(var(--title-font-size) + 1rem);
+    }
+    .not-found-page > p {
+        font-size: calc(var(--p-font-size) + .5rem);
+    }
+    .not-found-page > button {
+        padding: .5rem;
+        font-size: 1rem;
+    }
+    .not-found-page > hr {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .not-found-page > h1 {
+        font-size: calc(var(--title-font-size) + .5rem);
+    }
+    .not-found-page > p {
+        font-size: calc(var(--p-font-size) + .2rem);
+    }
+    .not-found-page > button {
+        padding: .5rem;
+        font-size: .7rem;
+    }
+    .not-found-page > hr {
+        width: 80%;
+    }
+}

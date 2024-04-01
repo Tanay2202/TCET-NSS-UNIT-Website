@@ -24,8 +24,8 @@ footer {
 
 .section-div > ul {
     list-style: none;
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-size: var(--p-font-size);
+    font-weight: var(--p-font-weight);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -37,6 +37,7 @@ footer {
 .footer-impt-links {
     display: flex;
     justify-content: space-between;
+    font-size: var(--p-font-size);
     padding: 1rem 0;
 }
 .developers-link {
@@ -53,14 +54,7 @@ footer {
 @media screen and (max-width:1024px){
     .section-div > h3 {
         font-size: 1.4rem;
-    }
-    .section-div > ul {
-        font-size: 1rem;
-    }
-    .footer-impt-links {
-        font-size: 1rem;
-    }
-    
+    }    
 }
 
 @media screen and (max-width:768px){
@@ -77,12 +71,6 @@ footer {
     .section-div > h3 {
         font-size: 1.2rem;
     }
-    .section-div > ul {
-        font-size: 1rem;
-    }
-    .footer-impt-links {
-        font-size: .8rem;
-    }
 }
 
 @media screen and (max-width:425px){
@@ -91,12 +79,6 @@ footer {
     }
     .section-div > h3 {
         font-size: 1.1rem;
-    }
-    .section-div > ul > li {
-        font-size: .9rem;
-    }
-    .footer-impt-links {
-        font-size: .8rem;
     }
 }
 

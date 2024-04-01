@@ -1,5 +1,6 @@
 const AboutImages = {
-    council2024: require("./council2024.png"),
+    council2024: require("./team_2024.jpg"),
+    Team2024: require("./team_2024.jpg"),
     Descipline: require("./Descipline.png"),
     Magazine2022: require("./Magazine2022.png"),
     Magazine2023: require("./Magazine2023.png"),

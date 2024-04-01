@@ -3,9 +3,9 @@
   width: 100%;
 }
 .Testimonial-wrapper > h1 {
-  font-family: Roboto-web;
-  font-weight: 900;
-  font-size: 4rem;
+  font-family: var(--title-font-family);
+  font-weight: var(--title-font-weight);
+  font-size: var(--title-font-size);
   text-align: center;
 }
 .card_wrapper {
@@ -118,9 +118,6 @@
   }
 }
 @media screen and (max-width: 426px) {
-  .Testimonial-wrapper > h1 {
-    font-size: 3rem;
-  }
   .card_wrapper {
     padding: 0.5rem;
   }
@@ -145,9 +142,6 @@
   }
 }
 @media screen and (max-width: 325px) {
-  .Testimonial-wrapper > h1 {
-    font-size: 2.5rem;
-  }
   .Testimonail-card {
     padding: 0.5rem;
   }
@@ -155,10 +149,17 @@
     font-size: 0.7rem;
   }
   #creator {
-    padding: 0.6rem 0.4rem;
+    padding: 0.8rem 0.4rem;
+    gap: 0rem;
   }
   #creator #image {
     height: 5rem;
+    width: 5rem;
+    aspect-ratio: 1/1;
+  }
+  #creator #image > img {
+    height: 100%;
+    width: 100%;
   }
   .details > h1 {
     font-size: 1rem;

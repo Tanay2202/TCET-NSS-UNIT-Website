@@ -7,18 +7,19 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 2rem;
-    transform: translateY(3rem);
+    transform: var(--transform-animation-below);
     opacity: 0;
     transition: 500ms cubic-bezier(0.4, 0, 1, 1);
 }
 .values-container.appear {
-    transform: translateY(0);
+    transform: var(--transform-no-animation);
     opacity: 1;
 }
 
 .values-container > h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 4rem;
+    font-family: var(--title-font-family);
+    font-size: var(--title-font-size);
+    text-align: center;
 }
 
 .values-animated-container {
@@ -32,11 +33,12 @@
     border: 3px solid lightskyblue;
     width: 30%;
     border-radius: 20px;
-    padding: 1rem 1rem ;
+    padding: 1rem;
     text-align: center;
 }
 
 .value-quote {
+    font-size: var(--p-font-size);
     font-style: italic;
     font-size: 300;
     margin-bottom: .7rem;
@@ -44,7 +46,7 @@
 
 .value-title {
     font-weight: 600;
-    font-family: Roboto, sans-serif;
+    font-family: var(--title-font-family);
     font-size: 1.8rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
@@ -78,9 +80,6 @@
     .value-title {
         font-size: 1.5rem;
     }
-    .values-container > h1 {
-        font-size: 4rem;
-    }
     .values-container {
         width: 90%;
     }
@@ -99,9 +98,11 @@
 @media screen and (max-width: 525px) {
     .values-container {
         gap: 1rem;
+    }    
+}
+
+@media screen and (max-width: 250px) {
+    .value-title {
+        font-size: 1.3rem;
     }
-    .values-container > h1 {
-        font-size: 2.5rem;
-    };
-    
 }

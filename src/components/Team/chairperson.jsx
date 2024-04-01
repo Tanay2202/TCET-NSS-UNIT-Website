@@ -30,7 +30,7 @@ const Team = () => {
                 awareness, respecting community challenges and cultivating a
                 sense of dignity in labor. The NSS unit, known for its proactive
                 planning, conducts weekly projects showcasing commendable
-                punctuality and discipline. The magazine initiative empowers
+                punctuality and discipline. The website initiative empowers
                 volunteers to voice social issues, fostering a sense of
                 responsibility. Kudos to TCET NSS UNIT and POs for their
                 efforts. Congratulations to the dedicated volunteers!

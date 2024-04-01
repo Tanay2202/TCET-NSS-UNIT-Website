@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import "../../styles/home/whatwedo.css";
 import useScrollVisibility from "../../hooks/useScrollAnimation";
+import { CallButton } from "../Common/index";
+import data from "./data.json"
 
 export default function WhatWeDo({nav}) {
   const sliderRef = useRef(null);
@@ -13,12 +15,10 @@ export default function WhatWeDo({nav}) {
           className={isVisible ? "what-we-do-text-header" : ""}
           ref={sliderRef}
         >
-          What We Do
+          {data.section2.title}
         </h2>
-        <p>
-        The TCET NSS Unit is a catalyst for positive change and joy through community service. Focused on education, conservation of environment, health, sustainability and society needs. Our impactful initiatives resonate within our campus and extend beyond fostering a sense of togetherness within the entire community. With the collective efforts of 200 volunteers, we collaborate with NGOs and governmental bodies to reach a growing number of beneficiaries. In essence, the TCET NSS Unit stands as a beacon of compassionate action, driven by the belief that through service, we can sow the seeds of joy and progress for a brighter tomorrow.
-        </p>
-        <button onClick={() => nav("../projects")}>Learn More</button>
+        <p>{data.section2.description}</p>
+        <CallButton nav={nav} to={data.section2.redirect}/>
       </div>
       <div className="image-carousel-container">
         <div></div>

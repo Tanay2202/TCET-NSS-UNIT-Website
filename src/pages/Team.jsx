@@ -39,7 +39,8 @@ const Team = () => {
       <TeamCreativeTeam
         simple_image={Images.Creative_reduced}
         hd_image={Images.councilandPo}
-        // name={""}
+        name={"Pillars of TCET NSS UNIT"}
+        text={"TCET NSS: Empowering Change, One Heartbeat at a Time."}
       />
       <Socials />
       <Map />

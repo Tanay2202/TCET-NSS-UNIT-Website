@@ -1,0 +1,30 @@
+{
+  "section1": {
+    "title": "OUR MOTO",
+    "moto": "NOT ME BUT YOU",
+    "description": "The National Service Scheme operates with the motto 'NOT ME BUT YOU' aiming to inspire youth to serve the people and emphasises the importance of selflessness and putting the needs of others before one's own.It constantly reminder that our actions are driven by the needs of others, that our service is not for personal gain but for the greater good. Embracing this motto, we humbly dedicate ourselves to the service of humanity"
+  },
+  "section2": {},
+  "section3": {
+    "title": "Core Values"
+  },
+  "section4": {
+    "title": "Volunteers Benefitted",
+    "tableTitle": "NSS VOLUNTEERS",
+    "tableColumn": ["Sr. No.", "Academic Year", "Enrolled", "Benefitted"],
+    "data": [
+      { "year": "2022-23", "volunteers": 200, "benefited": "-" },
+      { "year": "2022-23", "volunteers": 200, "benefited": 160 },
+      { "year": "2021-22", "volunteers": 150, "benefited": 139 },
+      { "year": "2020-21", "volunteers": 150, "benefited": 142 },
+      { "year": "2019-20", "volunteers": 150, "benefited": 139 },
+      { "year": "2018-19", "volunteers": 150, "benefited": 142 },
+      { "year": "2017-18", "volunteers": 150, "benefited": 136 }
+    ],
+    "footer": ["Total", "", 950, 847]
+  },
+  "section5": {
+    "title": "Our Magazine",
+    "description": "Refer to our bi-yearly magazine for getting insights of the Projects conducted by the TCET-NSS UNIT."
+  }
+}

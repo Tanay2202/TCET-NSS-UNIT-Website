@@ -12,9 +12,9 @@ function useScrollVisibility(TitleRef, SliderRef) {
     };
     window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", () => undefined);
     };
-  }, []);
+  }, [SliderRef, TitleRef]);
 
   return { isVisible };
 }

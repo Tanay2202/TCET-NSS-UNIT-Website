@@ -1,0 +1,36 @@
+.c-t-a-button {
+    outline: none;
+    border: none;
+    width: fit-content;
+    border-radius: 20px;
+    font-weight: 400;
+    color: white;
+    padding: .6rem .9rem;
+    border: 2px solid transparent;
+    font-size: 1rem;
+    background: linear-gradient(90deg, #f857a6, #ff5858);
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+    user-select: none;
+}
+
+.c-t-a-button:hover {
+    border: 2px solid black;
+    color: black
+}
+
+@media screen and (max-width:768px) {
+    .c-t-a-button {
+        font-size: .9rem;
+        padding: .4rem .8rem;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .c-t-a-button {
+        font-size: .8rem;
+        padding: .4rem .8rem;
+        margin: auto;
+    }
+}

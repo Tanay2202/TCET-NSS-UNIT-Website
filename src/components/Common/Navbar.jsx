@@ -21,7 +21,7 @@ export default function Navbar({ phase }) {
     changeNavbarStyles();
 
     window.addEventListener("scroll", changeNavbarStyles);
-    return () => window.removeEventListener("scroll", changeNavbarStyles);
+    return () => window.removeEventListener("scroll", () => undefined);
   }, [phase]);
 
   return (

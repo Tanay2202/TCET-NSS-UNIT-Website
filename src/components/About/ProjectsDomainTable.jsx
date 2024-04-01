@@ -54,12 +54,12 @@ export const ProjectsDomaintable = () => {
         <td>Menstrual Cycle Seminar</td>
         <td>Joy of Giving</td>
       </tr>
-      <tr>
+      {/* <tr>
         <td>Government Scheme Awareness</td>
         <td>Best Out of Waste Workshop</td>
         <td>Stemp Workshop on health and Hygiene</td>
         <td>Ganpati Visarjan Volunteering</td>
-      </tr>
+      </tr> */}
     </table>
   );
 };

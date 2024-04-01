@@ -1,17 +1,17 @@
 .home-socials-container {
     width: 80%;
     margin: auto;
-    padding: 2rem 0;
+    padding: 0 0 2rem 0;
 }
 .home-socials-header {
     text-align: center;
-    font-family: Roboto-web;
-    font-size: 5rem;
-    font-weight: 900;
+    font-family: var(--title-font-family);
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
 }
 .home-socials-quote {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: var(--p-font-size);
 }
 
 .socials-icon-links {
@@ -29,68 +29,39 @@
 }
 
 .social-icon > p {
-    font-size: 1rem;
+    font-size: var(--p-font-size);
 }
 
 .social-icon > img {
     height: 3rem;
     width: 3rem;
     transition: 500ms;
+    filter: drop-shadow(2px 2px 2px #2727275a);
 }
 .social-icon > img:hover {
     scale: 1.1;
 }
 .facebook {
     color: #316FF6;
-    filter: drop-shadow(2px 2px 2px #2727275a);
 }
 
 .linkedin {
     color: #0077b5;
-    filter: drop-shadow(2px 2px 2px #2727275a);
 }
 
 .instagram {
     color: #ee2a7b;
-    filter: drop-shadow(2px 2px 2px #2727275a);
-}
-
-.twitter {
-    
-    filter: drop-shadow(2px 2px 2px #2727275a);
 }
 
 @media screen and (max-width:1024px) {
-    .home-socials-header {
-        font-size: 3.5rem;
-    }
-    .home-socials-quote {
-        font-size: 1.1rem;
-    }
     .social-icon {
         font-size: 2.2rem;
-    }
-    
-    .social-icon > p {
-        font-size: 1.2rem;
     }
 }
 
 @media screen and (max-width:768px){
     .socials-icon-links {
         width:100%;
-    }
-    .home-socials-header {
-        font-size: 3rem;
-    }
-    .home-socials-quote {
-        font-size: 1rem;
-    }
-    .social-icon {
-        font-size: 2.1rem;
-    }
-    .social-icon > p {
-        font-size: .9rem;
     }
 }
 
@@ -101,24 +72,22 @@
 }
 
 @media screen and (max-width:425px){
-    
-    .home-socials-header {
-        font-size: 2.5rem;
-    }
-    .home-socials-quote {
-        font-size: .9rem;
-    }
-    .social-icon {
-        font-size: 1.7rem;
-    }
     .social-icon > p {
         display: none;
     }
 }
 
 
-@media screen and (max-width:320px) {
-    .home-socials-header {
-        font-size: 2.2rem;
+@media screen and (max-width:375px) {
+    .socials-icon-links {
+        justify-content: space-between;
+    }
+    .social-icon > img {
+        width: 2rem;
+    }
+}
+@media screen and (max-width:250px) {
+    .social-icon > img {
+        width: 1.5rem;
     }
 }

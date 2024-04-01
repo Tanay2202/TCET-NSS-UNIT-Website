@@ -106,16 +106,15 @@ const Team = () => {
                   <div className="back_content">
                     <h3>FROM THE PROGRAMME OFFICER'S DESK</h3>
                     <p>
-                      This resilient unit never loses hope, imparting a lesson
-                      of unity to the entire college. Community upliftment is
-                      the priority for each dedicated volunteer, well-acquainted
-                      with local issues and always ready to seek and implement
-                      solutions. Despite lockdown challenges, they engaged in
-                      creative projects like webinars and mask-making. Now, with
-                      improved conditions, offline projects bring hope,
-                      exposure, and excitement, fostering the continuous growth
-                      and development of our trusted volunteers. We're forever
-                      proud of them.
+                      This incredible group of individuals, driven by resilience
+                      and unity, inspires our college community with their
+                      unwavering hope and dedication to upliftment. Deeply
+                      connected to local issues, they implement innovative
+                      solutions, from blood and organ donation drives to tree
+                      plantations and awareness campaigns. Their efforts bring
+                      hope, exposure, and excitement, nurturing the growth of
+                      volunteers. We're immensely proud and grateful for their
+                      tireless commitment to making a positive difference.
                     </p>
                   </div>
                 </div>

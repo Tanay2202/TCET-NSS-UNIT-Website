@@ -46,11 +46,13 @@ nav {
 }
 
 .logo-title h2 {
+    font-family: inherit;
     font-weight: 400;
     font-size: 1.7rem;
 }
 
 .logo-title h3 {
+    font-family: inherit;
     font-weight: 400;
     font-size: 1.3rem;
 }
@@ -201,6 +203,25 @@ nav {
         width: 100%;
     }
     .menu-bar, .menu-bar > img {
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .navbar-container {
+        padding: 0;
+    }
+    .logo-image {
+        width: 2.7rem;
+    }
+    .logo-title > h2 {
+        font-size: 1.5rem;
+    }
+    .logo-title > h3 {
+        font-size: 1rem;
+    }
+    .menu-bar {
         height: 2rem;
         width: 2rem;
     }

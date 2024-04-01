@@ -1,4 +1,10 @@
 const Images = {
+  Beach: require("./beach-cleaning.jpg"),
+  Ganesh: require("./ganesh.jpg"),
+  Newspaper: require("./mewspaper-distri.jpg"),
+  Nasha_mukti: require("./nasha-mukti.jpg"),
+  Online_health: require("./online-health.jpg"),
+  Blood: require("./blood-dono.jpg"),
   PachPran: [
     require("./procard_Panch pran pledge (Education) 02.jpg"),
     require("./inner_Panch pran pledge (Education) 01.jpg"),
@@ -73,9 +79,9 @@ const Images = {
     require("./inner_Fitness India Activity (Health) 05.jpg"),
   ],
   MahaShiv: [
-    require("./procard_Mahashivratri - Old Age home visit (Society) 02.jpeg"),
+    require("./procard_Mahashivratri - Old Age home visit (Society) 02.jpg"),
     require("./inner_Mahashivratri - Old Age home visit (Society) 01.jpeg"),
-    require("./inner_Mahashivratri - Old Age home visit (Society) 04.jpeg"),
+    require("./inner_Mahashivratri - Old Age home visit (Society) 04.jpg"),
     require("./inner_Mahashivratri - Old Age home visit (Society) 03.jpeg"),
   ],
   Tiringa: [
@@ -126,7 +132,7 @@ const Images = {
     require("./Ganpati Visarjan.jpg"),
     require("./procard_Ganpati visarjan .jpg"),
     require("./Ganpati visarjan .jpg"),
-    require("./pg_Ganpati visarjan(MU)  (Society) 02.jpg")
+    require("./pg_Ganpati visarjan(MU)  (Society) 02.jpg"),
     // require("./procard_Ganpati visarjan(MU)  (Society) 07.jpg"),
     // require("./Ganpati visarjan .jpg"),
     // require("./Ganpati visarjan(MU)  (Society) 03.jpg"),

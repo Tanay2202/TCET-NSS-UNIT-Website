@@ -1,76 +1,73 @@
 .table-header-bold {
-    margin: 3rem auto 1rem auto;
-    text-align: center;
-    font-size: 3rem;
-
-
+  margin: 3rem auto 1rem auto;
+  text-align: center;
+  font-size: var(--title-font-size);
 }
 
 table {
-    min-width: 60%;
-    margin:  0 auto 3rem auto;
+  min-width: 60%;
+  margin: 0 auto 3rem auto;
 }
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
-th, td {
-    padding: 10px;
-    /* text-align: left; */
+th,
+td {
+  padding: 10px;
+  /* text-align: left; */
 }
 tr:first-child {
-    background-color: #84bde5;
-    font-size: 1.4rem;
-     /* text color */
+  background-color: #84bde5;
+  font-size: 1.4rem;
+  /* text color */
 }
 /* tr:nth-child(2), tr:last-child  {
     font-weight: 700;
 } */
 
 @media screen and (max-width: 768px) {
-    .really-really-huge-table {
-        font-size: .8rem;
-    }
-    .table-header-bold {
-        font-size: 2rem;
-    }
+  .really-really-huge-table {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (max-width: 660px) {
-    .really-really-huge-table {
-        font-size: .6rem;
-    }
+  .really-really-huge-table {
+    font-size: 0.6rem;
+  }
 }
 
-
 @media screen and (max-width: 550px) {
-    .really-really-huge-table > tr > td {
-        padding: 3px;
-    }
+  .really-really-huge-table > tr > td {
+    padding: 3px;
+  }
 }
 
 @media screen and (max-width: 375px) {
-    .really-really-huge-table > tr > td {
-        
-        font-size: .5rem;
-    }
+  .really-really-huge-table > tr > td {
+    font-size: 0.5rem;
+  }
 }
 
-
 @media screen and (max-width: 425px) {
-    table {
-        font-size: .8rem;
-    }
-    .table-header-bold {
-        font-size: 1.5rem;
-    }
+  table {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (max-width: 320px) {
-    table {
-        font-size: .6rem;
-    }
-    .really-big-table {
-        font-size: .5rem;
-    }
+  table {
+    font-size: 0.6rem;
+  }
+  .really-big-table {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 270px) {
+  .really-big-table > tr > td {
+    padding: 5px;
+  }
 }

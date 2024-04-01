@@ -4,13 +4,13 @@
   display: flex;
   justify-content: space-between;
   padding: 2rem 0;
-  transform: translateY(3rem);
+  transform: var(--transform-animation-below);
   opacity: 0;
   transition: 500ms;
 }
 
 .what-we-do.appear {
-  transform: translate(0);
+  transform: var(--transform-no-animation);
   opacity: 1;
 }
 
@@ -23,8 +23,9 @@
 }
 .what-we-do-text-header {
   position: relative;
-  text-wrap: nowrap;
+  text-wrap: wrap;
   width: fit-content;
+  user-select: none;
 }
 .what-we-do-text-header::before {
   content: "";
@@ -32,7 +33,7 @@
   inset: 0;
   background-color: white;
   border-left: 7px solid black;
-  animation: typewriter 2s ease-in-out forwards;
+  animation: typing-animation-slider 2s ease-in-out forwards;
 }
 .about-us-text {
   width: 60%;
@@ -42,36 +43,15 @@
   gap: 1rem;
 }
 
-.what-we-do-text h2 {
-  font-family: Roboto-web;
-  font-size: 5rem;
-  font-weight: 900;
+.what-we-do-text > h2 {
+  font-size: var(--title-font-size);
+  font-weight: var(--title-font-weight);
+  font-family: var(--title-font-family);
 }
 
-.what-we-do-text p {
-  /* font-family: 'Roboto', sans-serif; */
-  font-size: 1rem;
-  font-weight: 400;
-}
-
-.what-we-do-text button {
-  outline: none;
-  border: none;
-  width: fit-content;
-  border-radius: 20px;
-  font-weight: 400;
-  color: white;
-  padding: 0.6rem 0.9rem;
-  font-size: 1rem;
-  border: 2px solid transparent;
-  background: linear-gradient(90deg, #f857a6, #ff5858);
-  cursor: pointer;
-  transition: 200ms ease-in-out;
-}
-
-.what-we-do-text button:hover {
-  border: 2px solid black;
-  color: black;
+.what-we-do-text > p {
+  font-size: var(--p-font-size);
+  font-weight: var(--p-font-weight);
 }
 
 .image-carousel-container {
@@ -883,10 +863,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .what-we-do-text h2 {
-    font-size: 3.5rem;
-  }
-
   .what-we-do-text {
     width: 35%;
     min-width: 20rem;
@@ -940,11 +916,9 @@
 @media screen and (max-width: 768px) {
   .what-we-do-text h2 {
     text-align: center;
-    font-size: 3rem;
     margin: auto;
   }
   .what-we-do-text p {
-    font-size: 0.8rem;
     text-align: justify;
   }
   .what-we-do-text {
@@ -952,35 +926,18 @@
     min-width: 1rem;
     text-align: center;
   }
-  .what-we-do-text button {
-    font-size: 0.9rem;
-    padding: 0.4rem 0.8rem;
-    margin: auto;
-  }
   .image-carousel-container {
     width: 100%;
     height: 20rem;
   }
-
   .what-we-do {
     flex-direction: column-reverse;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .what-we-do-text h2 {
-    font-size: 2.5rem;
-  }
-  .what-we-do-text p {
-    font-size: 0.8rem;
-  }
   .what-we-do-text {
     width: 100%;
-  }
-  .what-we-do-text button {
-    font-size: 0.8rem;
-    padding: 0.4rem 0.8rem;
-    margin: auto;
   }
   .image-carousel-container {
     width: 100%;

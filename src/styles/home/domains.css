@@ -1,25 +1,26 @@
 .home-domains-container {
-    padding: 2rem 0;
+    padding: 0 0 2rem 0;
     width: 80%;
     margin: auto;
-    transform: translateY(3rem);
+    transform: var(--transform-animation-below);
     opacity: 0;
     transition: 1.2s cubic-bezier(0.4, 0, 1, 1);
 }
 
 .home-domains-container.appear{
-    transform: translateY(0);
+    transform: var(--transform-no-animation);
     opacity: 1;
 }
 
 .home-domains-header {
     position: relative;
     text-align: center;
-    font-family: Roboto-web;
+    font-family: var(--title-font-family);
+    user-select: none;
     width: fit-content;
     margin: auto;
-    font-size: 5rem;
-    font-weight: 900;
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
 }
 .home-domains-header::before {
     content: "";
@@ -27,14 +28,7 @@
     inset: 0;
     background-color: white;
     border-left: 7px solid black;
-    animation: typewriter 2s ease-in-out forwards;
-}
-
-@keyframes typewriter {
-    to {
-        left: 100%;
-        display: none;
-    }
+    animation: typing-animation-slider 2s ease-in-out forwards;
 }
 
 .domains-chart-container {
@@ -47,12 +41,14 @@
     display: flex;
     gap: 2rem;
     align-items: center;  
+    cursor: pointer;
     padding: 1.5rem 0; 
 }
 
 .home-domains-chart-image-container {
     position: relative;
     overflow-y: clip;
+    user-select: none;
     border-radius: 50%;
 }
 
@@ -98,7 +94,7 @@
 }
 
 .domains-chart-passage {
-    font-size: 1rem;
+    font-size: var(--p-font-size);
 }
 
 .home-domains-chart img:hover + .see-more-domains-container {
@@ -106,17 +102,7 @@
     transform: translateY(0);
 }
 
-
-.see-more-domains {
-    color: white;
-    font-size: 3rem;
-    font-weight: 400;
-}
-
 @media screen and (max-width:1024px){
-    .home-domains-header {
-        font-size: 3.5rem;
-    }
     .home-domains-chart {
         width: 70%;
     }
@@ -129,10 +115,6 @@
 }
 
 @media screen and (max-width:650px){
-    
-    .home-domains-header {
-        font-size: 3rem;
-    }
     .home-domains-chart {
         width: 100%;
     }
@@ -149,12 +131,20 @@
 }
 
 @media screen and (max-width:425px){
-    
-    .home-domains-header {
-        font-size: 3rem;
-    }
     .domains-chart-text > hr, .domains-chart-text> p {
         display: none;
+    }
+    .home-domains-chart {
+        height: fit-content;
+        width: 100%;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .home-domains-chart > div > img{
+        padding: .2rem;
+        height: 5rem;
+        width: 5rem;
+        border: 5px solid rgb(1, 45, 59);
     }
 }
 

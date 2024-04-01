@@ -6,7 +6,7 @@
     user-select: none;
 }
 
-.hero-text{
+.hero-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -15,7 +15,7 @@
     width: 100%;
 }
 
-.hero-text h2 {
+.hero-text > h2 {
     color: rgba(255, 255, 255, 0.783);
     font-size: 7rem;
     font-family: Roboto-web;
@@ -23,7 +23,7 @@
 
 }
 
-.hero-text h3 {
+.hero-text > h3 {
     color: rgba(255, 255, 255, 0.783);
     font-size: 10rem;
     font-family: Alex-Brush-web;
@@ -31,10 +31,10 @@
 }
 
 @media screen and (max-width:1024px) {
-    .hero-text h2 {
+    .hero-text > h2 {
         font-size: 5rem;
     }
-    .hero-text h3 {
+    .hero-text > h3 {
         font-size: 8rem;
     }
 }
@@ -43,22 +43,143 @@
     .hero-section {
         height: 75vh;
     }
-    .hero-text h2 {
+    .hero-text > h2 {
         font-size: 3rem;
     }
-    .hero-text h3 {
+    .hero-text > h3 {
         font-size: 4rem;
     }
+}
+@media screen and (max-width:425px) {
+    .hero-section {
+        height: 50vh;
+    }
+    .hero-text > h2 {
+        font-size: 2rem;
+    }
+    .hero-text > h3 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width:250px) {
+    .hero-section {
+        height: 40vh;
+    }
+    .hero-text > h2 {
+        font-size: 1.5rem;
+    }
+    .hero-text > h3 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:165px) {
+    .hero-section {
+        height: 30vh;
+    }
+    .hero-text > h2 {
+        font-size: 1.2rem;
+    }
+    .hero-text > h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height:650px) {
+    .hero-text > h2 {
+        font-size: 5rem;
+    }
+    .hero-text > h3 {
+        font-size: 8rem;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height:500px) {
 }
 
 @media screen and (max-width:425px) {
     .hero-section {
         height: 50vh;
     }
-    .hero-text h2 {
+    .hero-text > h2 {
         font-size: 2rem;
     }
-    .hero-text h3 {
+    .hero-text > h3 {
         font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width:250px) {
+    .hero-section {
+        height: 40vh;
+    }
+    .hero-text > h2 {
+        font-size: 1.5rem;
+    }
+    .hero-text > h3 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:165px) {
+    .hero-section {
+        height: 30vh;
+    }
+    .hero-text > h2 {
+        font-size: 1.2rem;
+    }
+    .hero-text > h3 {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height:650px) {
+    .hero-text > h2 {
+        font-size: 5rem;
+    }
+    .hero-text > h3 {
+        font-size: 8rem;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height:500px) {
+    
+    .hero-text > h2 {
+        font-size: 3.5rem;
+    }
+    .hero-text > h3 {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height:350px) {
+    
+    .hero-text > h2 {
+        font-size: 2.5rem;
+    }
+    .hero-text > h3 {
+        font-size: 3rem;
+    }
+}
+
+
+@media screen and (orientation: landscape) and (max-width:750px) {
+    
+    .hero-text > h2 {
+        font-size: 3rem;
+    }
+    .hero-text > h3 {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width:500px) {
+    
+    .hero-text > h2 {
+        font-size: 2rem;
+    }
+    .hero-text > h3 {
+        font-size: 3rem;
     }
 }

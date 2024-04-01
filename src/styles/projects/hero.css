@@ -88,9 +88,13 @@
     
     color: rgba(255, 255, 255, 0.783);
     font-size: 5rem;
-    text-wrap: nowrap;
     font-family: Alex-Brush-web;
     font-weight: 400;
+}
+
+.no-line-break {
+    text-wrap: nowrap;
+    word-wrap: nowrap;
 }
 
 @media screen and (max-width: 1024px) {
@@ -132,5 +136,8 @@
     }
     .project-header-text {
         top: 30%
+    }
+    .project-header-text>h3 {
+        font-size: 1.5rem;
     }
 }

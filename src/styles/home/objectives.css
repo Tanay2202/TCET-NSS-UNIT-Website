@@ -1,23 +1,24 @@
 .home-objective-container {
     padding: 2rem 0;
-    width: 80%;
+    width: var(--component-width);
     margin: auto;
-    transform: translateY(3rem);
+    transform: var(--transform-animation-below);
     opacity: 0;
     transition: 500ms;
 }
 
 .home-objective-container.appear{
-    transform: translateY(0);
+    transform: var(--transform-no-animation);
     opacity: 1;
 }
 
 .home-objective-header {
     text-align: center;
     position: relative;
-    font-family: Roboto-web;
-    font-size: 5rem;
-    font-weight: 900;
+    font-family: var(--title-font-family);
+    font-size: var(--title-font-size);
+    font-weight: var( --title-font-weight);
+    user-select: none;
     width: fit-content;
     margin: auto;
 }
@@ -28,23 +29,16 @@
     inset: 0;
     background-color: white;
     border-left: 7px solid black;
-    animation: typewriter 2s ease-in-out forwards;
-}
-
-@keyframes typewriter {
-    to {
-        left: 100%;
-        display: none;
-    }
+    animation: typing-animation-slider 2s ease-in-out forwards;
 }
 
 .home-objective-quote {
     width: 90%;
-    font-size: 1rem;
+    font-size: var(--p-font-size);
     margin: auto;
     text-align: center;
     padding: 1.5rem 0;
-    font-weight: 400;
+    font-weight: var(--p-font-weight);
 }
 
 .home-objective-cards-container {
@@ -68,11 +62,7 @@
     transition: 500ms;
     filter: brightness(0.6);
     display: block;
-    /* max-width: 16rem; */
 }
-
-
-
 
 .home-objective-card-text {
     text-align: center;
@@ -112,14 +102,6 @@
 }
 
 @media screen and (max-width:1024px) {
-    .home-objective-header {
-        font-size: 3.5rem;
-    }
-
-    .home-objective-quote {
-        font-size: 1.1rem;
-    }
-
     .home-objective-container {
         width: 90%;
     }
@@ -140,12 +122,7 @@
 }
 
 @media screen and (max-width:768px) {
-    .home-objective-header {
-        font-size: 3rem;
-    }
-
     .home-objective-quote {
-        font-size: .8rem;
         text-align: justify;
     }
     .home-objective-cards-container {
@@ -209,12 +186,8 @@
         width: 90%;
         margin: none;
     }
-    .home-objective-header {
-        font-size: 2.5rem;
-    }
 
     .home-objective-quote {
-        font-size: .9rem;
         width: 100%;
     }
     .home-objective-cards-container {
@@ -252,5 +225,17 @@
     }
     .home-objective-card-image {
         height: 20rem;
+    }
+}
+
+@media screen and (max-width:250px) {
+    .home-objective-card-image {
+        height: 18rem;
+    }
+    .home-objective-card>div>h2 {
+        font-size: 1.3rem;
+    }
+    .home-objective-card>div>p{
+        font-size: .8rem;
     }
 }

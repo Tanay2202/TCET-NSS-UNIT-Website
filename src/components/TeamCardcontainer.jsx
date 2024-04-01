@@ -40,7 +40,7 @@ const CardContainer = () => {
   ];
 
   return (
-    <div className="jc-card-container">
+    <div id="junior-council" className="jc-card-container">
       <h2 id="jc-container-header">Junior Councils</h2>
       <p id="jc-container-info">
         At the forefront of assistance, our Junior Councils stand out as

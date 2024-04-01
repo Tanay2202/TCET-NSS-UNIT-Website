@@ -1,16 +1,21 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router";
 
-const ScrollToTop = ({ children }) => {
-  const location = useLocation();
-
+const ScrollToTop = () => {
+  const { hash } = useLocation();
   useEffect(() => {
-    const { hash } = location;
     if (!hash) {
       window.scrollTo(0, 0);
+    } else {
+      console.log(hash);
+      const scrollpart = document.querySelector(hash);
+      console.log(scrollpart)
+      if (scrollpart) {
+        console.log("founf id");
+        scrollpart.scrollIntoView({ behavior: "smooth" });
+      }
     }
-  }, [location]);
-
+  }, [hash]);
   return null;
 };
 

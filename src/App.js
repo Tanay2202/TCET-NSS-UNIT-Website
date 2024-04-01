@@ -4,7 +4,6 @@ import "./App.css";
 import { NavbarFooter } from "./templates/NavbarFooter";
 import { NavbarOnly } from "./templates/Navbar";
 import ScrollToTop from "./utills/ScrollToTop";
-
 import {
   Developers,
   About,
@@ -15,7 +14,7 @@ import {
   ImageGallery,
 } from "./pages/index";
 import { LoaderStart, SlowInternet } from "./components/Loaders/index";
-import Example from "./pages/Debug";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   return (
@@ -35,13 +34,15 @@ function App() {
             </Route>
             <Route element={<NavbarOnly phase={3} />}>
               <Route path="/projects" element={<Projects />} />
-              <Route path="/projects/:id" element={<Projects />} />
+              {/* <Route path="/projects/:id" element={<Projects />} /> */}
             </Route>
             <Route element={<NavbarOnly phase={1} />}>
               <Route path="/testimonials" element={<Testimonial />} />
               <Route path="/imagegallery" element={<ImageGallery />} />
             </Route>
-            <Route path="/debug" element={<Example />} />
+            <Route element={<NavbarFooter phase={1} />} >
+              <Route path="*" element={<NotFoundPage />} />
+            </Route>
           </Routes>
         </Suspense>
       </BrowserRouter>
