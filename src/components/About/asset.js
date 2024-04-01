@@ -36,13 +36,16 @@ export const magazineData = [
   {
     image: AboutImages.Magazine2022,
     title: "Magazine 2.1.pdf",
+    link: "https://drive.google.com/file/d/1U6i3g2AQvff_CUoImgHkwsW1A2QXXcVZ/view?usp=sharing"
   },
   {
     image: AboutImages.Magazine2023,
     title: "Magazine 2.2.pdf",
+    link: "https://drive.google.com/file/d/1UQAoKHogbfZh7Ob0YzrB4UHlWUJka6pc/view?usp=sharing",
   },
   {
     image: AboutImages.Magazine2024,
     title: "Magazine 3.1.pdf",
+    link: "https://drive.google.com/file/d/1hWSPtVWkPax_CedDrqK9I_Qg7SAQ8a9V/view?usp=sharing"
   },
 ];

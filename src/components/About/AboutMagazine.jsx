@@ -6,14 +6,6 @@ import useScrollVisibility from "../../hooks/useScrollAnimation";
 
 export default function Magazine() {
   const [focusMag, setFocusMag] = useState(null);
-  const handleDownload = (title) => {
-    const downloadLink = document.createElement("a");
-    downloadLink.href = `/pdf/${title}`;
-    downloadLink.download = `NSS ${title}`;
-    document.body.appendChild(downloadLink);
-    downloadLink.click();
-    document.body.removeChild(downloadLink);
-  };
   const magazineRef = useRef(null)
   const sliderRef = useRef(null)
     
@@ -27,7 +19,7 @@ export default function Magazine() {
       <div className="magazine-page-container">
         {magazineData.map((mag, idx) => (
           <div
-            onClick={() => handleDownload(mag.title)}
+            onClick={() => window.open(mag.link, '_blank')}
             onMouseEnter={() => setFocusMag(idx)}
             onMouseLeave={() => setFocusMag(null)}
             className={`magazine-image ${

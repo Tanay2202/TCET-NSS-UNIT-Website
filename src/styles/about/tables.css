@@ -70,4 +70,7 @@ tr:first-child {
   .really-big-table > tr > td {
     padding: 5px;
   }
+  .really-big-table {
+    display: none;
+  }
 }
